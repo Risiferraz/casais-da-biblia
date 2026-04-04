@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.27" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Jogo da Memória</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style-media.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+	<img id="titulo" src="img/titulo.png">
+	<img id="titulo-media" src="img/titulo-media.png">
+	<div id="informacoes">
+		<div id="score">
+			<h5>PLACAR:</h5>
+			<h2 id="placar">0</h2>
+		</div>
+		<div id="marcatempo">
+			<h5>TEMPO:</h5>
+			<h2 id="cronometro">00:00</h2>
+		</div>
+		<div id="caixa-dialogo">
+				<p>As pessoas selecionadas formam um casal?<br> Confirme clicando nos botões:</p>
+					<button type="button" id="botao-sim" class="botao">Sim</button>
+					<button type="button" id="botao-nao" class="botao">Não</button>
+		</div>
+	</div>
+	<div id="stage">
+		<div id="container">
+			<div class="card" id="card0">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card1">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card2">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card3">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card4">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card5">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card6">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card7">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card8">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card9">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card10">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card11">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card12">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card13">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card14">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card15">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card16">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+			<div class="card" id="card17">
+				<div class="face back"></div>
+				<div class="face front"></div>
+			</div>
+
+			<img src="img/match.png" id="imgMatchSign" />
+		</div>
+		<div id="modalGameOver">
+			<img id="imgGameOver" src="img/gameover.png" />
+		</div>
+	</div>
+
+	<!-- MENSAGEM DE ORIENTAÇÃO LANDSCAPE -->
+	<div id="landscape-warning">
+		<div id="landscape-warning-content">
+			<h2>⚠️ Atenção!</h2>
+			<p>Para uma melhor experiência, <strong>gire seu dispositivo</strong> para a posição vertical
+				(portrait).
+			</p>
+			<div id="rotate-icon">📱 ↻</div>
+		</div>
+	</div>
+
+	<script defer src="js/escalaDinamica.js"></script>
+	<script defer src="js/cronometro.js"></script>
+	<script defer src="js/pontuacaoFinal.js"></script>
+	<script defer src="js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
