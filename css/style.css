@@ -7,6 +7,7 @@
 body {
 	background-color: #a0895f;
 	text-align: center;	/*Centraliza o texto, mas também, como neste caso centralizará a imagem do modal*/
+	height: 100dvh;
 }
 
 #stage {
