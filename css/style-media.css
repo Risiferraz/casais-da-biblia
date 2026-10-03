@@ -9,7 +9,7 @@
     }
 
     #stage {
-        height: 85dvh;
+        height: min(85dvh, calc(100vw * 15 / 8));
         display: flex;
         align-items: center;
         justify-content: center;
@@ -18,7 +18,9 @@
     }
 
     #container {
-        width: min(100%, calc(85dvh * 8 / 15));
+        height: 100%;
+        width: auto;
+        max-width: 100%;
         aspect-ratio: 8 / 15;
         margin: 0 auto;
         grid-template-columns: repeat(4, minmax(0, 1fr));
