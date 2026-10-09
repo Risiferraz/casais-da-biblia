@@ -10,9 +10,11 @@
 
     #cabecalho {
         grid-template-columns: 34vw 33vw 33vw;
+        grid-template-rows: 50% 50%;
         height: 12dvh;
         overflow: hidden;
         align-items: center;
+        margin: 1% auto;
     }
 
     #titulo {
@@ -24,11 +26,10 @@
         margin-top: 0;
         width: 100%;
         grid-area: 1 / 1 / span 2 / span 2;
-        padding: 2% 0;
         max-height: 100%;
         object-fit: contain;
     }
-
+/* 
     #informacoes {
         grid-area: 1 / 3 / span 2 / span 1;
         width: 100%;
@@ -38,18 +39,18 @@
         align-content: center;
         justify-items: center;
         overflow: hidden;
-    }
+    } */
     
     #score {
         grid-area: 1 / 3;
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: static;
         top: auto;
         right: auto;
-        z-index: 60;
+        z-index: 60; */
     }
     
     #placar {
@@ -76,17 +77,20 @@
 
     #caixa-dialogo {
         display: grid;
-        grid-template-columns: 78% 22%;
+        grid-area: 1 / 1 / span 2 / span 2;
+        grid-template-columns: 80% 20%;
         grid-template-rows: 1fr 1fr;
         align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 290px;
-        height: 127px;
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        height: 12dvh;
+        max-width: 100%;
         padding: 3%;
         z-index: 50;
         border-radius: 0;
+        overflow: hidden;
     }
 
     #caixa-dialogo p {
@@ -124,7 +128,7 @@
 
     #container {
         height: 100%;
-        width: auto;
+        width: 100%;
         max-width: 100%;
         aspect-ratio: 8 / 15;
         margin: 0 auto;
@@ -181,8 +185,8 @@
     } */
 
     #caixa-dialogo {
-        width: 275px;
-        height: 112px;
+        width: 100%;
+        height: 100%;
     }
 
     #botao-sim {
@@ -213,7 +217,7 @@
     }
 
     #caixa-dialogo {
-        height: 108px;
+        height: 100%;
     }
 
     #botao-sim {
@@ -254,7 +258,7 @@
     }
 
     #caixa-dialogo {
-        height: 98px;
+        height: 100%;
     }
 
     #botao-sim {
