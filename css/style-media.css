@@ -29,28 +29,9 @@
         max-height: 100%;
         object-fit: contain;
     }
-/* 
-    #informacoes {
-        grid-area: 1 / 3 / span 2 / span 1;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        align-content: center;
-        justify-items: center;
-        overflow: hidden;
-    } */
     
     #score {
         grid-area: 1 / 3;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: static;
-        top: auto;
-        right: auto;
-        z-index: 60; */
     }
     
     #placar {
@@ -184,101 +165,6 @@
     }
 }
 
-/* -----------------------------------------------------------------------------*/
-/* TELAS COM LARGURA MENOR OU IGUAL A 375PX */
-
-@media screen and (max-width: 375px) {
-
-    /* body {
-        background-color: rosybrown;
-    } */
-
-    #caixa-dialogo {
-        width: 100%;
-        height: 100%;
-    }
-
-    #botao-sim {
-        font-size: 1.1rem;
-        margin: 8%;
-        padding: 11%;
-    }
-
-    #botao-nao {
-        font-size: 1.1rem;
-        margin: 8%;
-        padding: 11%;
-    }
-
-}
-
-/* -----------------------------------------------------------------------------*/
-/* TELAS COM LARGURA MENOR OU IGUAL A 375PX E ALTURA MENOR OU IGUAL A 667PX */
-
-@media screen and (max-width: 375px) and (max-height: 667px) {
-
-    /* body {
-        background-color: #667eea;
-    } */
-
-    #titulo-media {
-        width: 65%;
-    }
-
-    #caixa-dialogo {
-        height: 100%;
-    }
-
-    #botao-sim {
-        font-size: 1rem;
-        margin: 10%;
-        padding: 12%;
-    }
-
-    #botao-nao {
-        font-size: 1rem;
-        margin: 10%;
-        padding: 12%;
-    }
-
-}
-
-/* -----------------------------------------------------------------------------*/
-/* TELAS COM LARGURA MENOR OU IGUAL A 360PX E ALTURA MENOR OU IGUAL A 640PX */
-
-@media screen and (max-width: 360px) and (max-height: 640px) {
-
-    /* body {
-        background-color: brown;
-    } */
-
-    #titulo-media {
-        width: 60%;
-    }
-
-    #placar {
-        font-size: 1.3rem;
-        line-height: 1.6rem;
-    }
-
-    #cronometro {
-        font-size: 1.3rem;
-        line-height: 1.6rem;
-    }
-
-    #caixa-dialogo {
-        height: 100%;
-    }
-
-    #botao-sim {
-        font-size: 0.8rem;
-    }
-
-    #botao-nao {
-        font-size: 0.8rem;
-    }
-
-}
 
 /* -----------------------------------------------------------------------------*/
 /* TELAS COM ORIENTAÇÃO LANDSCAPE E ALTURA MENOR OU IGUAL A 460PX */
